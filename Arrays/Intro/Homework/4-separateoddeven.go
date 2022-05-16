@@ -1,0 +1,3 @@
+package Homework
+
+// Too trivial
