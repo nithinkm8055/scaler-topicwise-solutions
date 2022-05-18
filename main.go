@@ -2,6 +2,7 @@ package main
 
 import (
 	"goplay/Arrays"
+	"goplay/Modular"
 	"goplay/Sort"
 )
 
@@ -14,4 +15,9 @@ func main() {
 	{
 		Arrays.Arrays()
 	}
+
+	{
+		Modular.Modular()
+	}
+
 }
