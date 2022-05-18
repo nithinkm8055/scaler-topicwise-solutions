@@ -15,6 +15,8 @@ func Modular() {
 
 		fmt.Println(Homework.RepeatedNumber([]int{3, 1, 2, 5, 3}))
 		fmt.Println(Homework.Concatenate3Numbers(10, 20, 30))
+		fmt.Println(Homework.RectangleOverlap(0, 0, 1, 1, 1, 1, 6, 6))
+		fmt.Println(Homework.LCM(9, 6))
 	}
 
 }
