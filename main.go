@@ -1,7 +1,9 @@
 package main
 
 import (
+	"goplay/Adhoc"
 	"goplay/Arrays"
+	"goplay/Maths"
 	"goplay/Modular"
 	"goplay/Sort"
 )
@@ -20,4 +22,10 @@ func main() {
 		Modular.Modular()
 	}
 
+	{
+		Adhoc.Adhoc()
+	}
+	{
+		Maths.Maths()
+	}
 }
