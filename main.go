@@ -6,6 +6,7 @@ import (
 	"goplay/Maths"
 	"goplay/Modular"
 	"goplay/Sort"
+	"goplay/Sorting"
 )
 
 func main() {
@@ -28,4 +29,9 @@ func main() {
 	{
 		Maths.Maths()
 	}
+
+	{
+		Sorting.Sorting()
+	}
+
 }

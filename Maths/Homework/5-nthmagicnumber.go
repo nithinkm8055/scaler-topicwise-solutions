@@ -1,6 +1,20 @@
 package Homework
 
+//optimized
 func MagicNumber(A int) int {
+	sum := 0
+	number := 1
+	for A > 0 {
+		number *= 5
+		if A%2 == 1 {
+			sum += number
+		}
+		number /= 2
+	}
+	return sum
+}
+
+func MagicNumber2(A int) int {
 
 	magicNumber := make([]int, 0)
 
@@ -15,11 +29,7 @@ func MagicNumber(A int) int {
 			magicNumber = append(magicNumber, magicNumber[i]+number)
 		}
 		count++
-		if count == A {
-			break
-		}
 	}
 
 	return magicNumber[A-1]
-
 }
