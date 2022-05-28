@@ -3,7 +3,7 @@ package main
 import (
 	"goplay/Adhoc"
 	"goplay/Arrays"
-	"goplay/Contest"
+	"goplay/Maps"
 	"goplay/Maps/Day1"
 	"goplay/Maths"
 	"goplay/Modular"
@@ -40,11 +40,13 @@ func main() {
 	{
 		Strings.Strings()
 	}
+
 	{
-		Day1.Maps()
+		//Contest.Contest()
 	}
 
 	{
-		Contest.Contest()
+		Day1.Maps()
+		Maps.Maps()
 	}
 }
