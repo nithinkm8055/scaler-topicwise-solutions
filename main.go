@@ -49,4 +49,5 @@ func main() {
 		Day1.Maps()
 		Maps.Maps()
 	}
+
 }
