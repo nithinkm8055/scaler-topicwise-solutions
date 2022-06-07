@@ -10,6 +10,7 @@ import (
 	"goplay/Modular"
 	"goplay/Sort"
 	"goplay/Sorting"
+	"goplay/StacksnQueues"
 	"goplay/Strings"
 )
 
@@ -54,6 +55,10 @@ func main() {
 	{
 		LinkedList.LinkedList()
 		LinkedList.DesignLinkedList()
+	}
+
+	{
+		StacksnQueues.StacksAndQueues()
 	}
 
 }
