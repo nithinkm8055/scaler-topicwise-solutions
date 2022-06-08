@@ -3,7 +3,6 @@ package main
 import (
 	"goplay/Adhoc"
 	"goplay/Arrays"
-	"goplay/LinkedList"
 	"goplay/Maps"
 	"goplay/Maps/Day1"
 	"goplay/Maths"
@@ -53,8 +52,8 @@ func main() {
 	}
 
 	{
-		LinkedList.LinkedList()
-		LinkedList.DesignLinkedList()
+		//LinkedList.LinkedList()
+		//LinkedList.DesignLinkedList()
 	}
 
 	{
