@@ -2,7 +2,7 @@ package Trees
 
 import (
 	"fmt"
-	"goplay/Trees/Assignment"
+	"goplay/Trees/Trees1/Assignment"
 )
 
 func Trees() {
