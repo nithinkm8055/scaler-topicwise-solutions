@@ -19,5 +19,6 @@ func solve(A []int) int {
 	}
 
 	return rSum % (int((math.Pow10(9))) + 7)
+	math.Pow()
 
 }
