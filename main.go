@@ -1,21 +1,19 @@
 package main
 
 import (
-	"goplay/Adhoc"
-	"goplay/Arrays"
-	"goplay/LinkedList"
-
-	//"goplay/LinkedList"
-	"goplay/Maps"
-	"goplay/Maps/Day1"
-	"goplay/Maths"
-	"goplay/Modular"
-	"goplay/Sort"
-	"goplay/Sorting"
-	"goplay/StacksnQueues"
-	"goplay/Strings"
-	"goplay/SubsequencesAndSubsets"
-	"goplay/Trees"
+	"goplay/Intermediate/Adhoc"
+	"goplay/Intermediate/Arrays"
+	"goplay/Intermediate/LinkedList"
+	"goplay/Intermediate/Maps"
+	"goplay/Intermediate/Maps/Day1"
+	"goplay/Intermediate/Maths"
+	"goplay/Intermediate/Modular"
+	"goplay/Intermediate/Sort"
+	"goplay/Intermediate/Sorting"
+	"goplay/Intermediate/StacksnQueues"
+	"goplay/Intermediate/Strings"
+	"goplay/Intermediate/SubsequencesAndSubsets"
+	"goplay/Intermediate/Trees"
 )
 
 func main() {
