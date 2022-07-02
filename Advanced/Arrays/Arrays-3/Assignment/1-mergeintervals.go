@@ -1,4 +1,4 @@
-package Arrays_3
+package Assignment
 
 type Interval struct {
 	start, end int
