@@ -1,5 +1,6 @@
 package Assignment
 
+// TC: O(log(max(a,b))
 func gcd(a int, b int) int {
 	if a == 0 || b == 0 {
 		if a > b {
