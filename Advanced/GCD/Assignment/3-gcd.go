@@ -2,27 +2,14 @@ package Assignment
 
 // TC: O(log(max(a,b))
 func gcd(a int, b int) int {
-	if a == 0 || b == 0 {
-		if a > b {
-			return a
-		}
-		return b
+	if a < b {
+		a, b = b, a
 	}
 
-	dividend := b
-	divisor := a
-	if a > b {
-		dividend = a
-		divisor = b
+	for b > 0 {
+		a = a % b
+		a, b = b, a
 	}
-	for divisor > 0 {
-		remainder := dividend % divisor
-		if remainder > 0 {
-			dividend = divisor
-			divisor = remainder
-		} else {
-			break
-		}
-	}
-	return divisor
+
+	return a
 }
