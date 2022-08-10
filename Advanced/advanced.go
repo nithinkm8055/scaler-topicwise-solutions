@@ -1,16 +1,18 @@
 package Advanced
 
 import (
-	"goplay/Advanced/Arrays"
-	"goplay/Advanced/GCD"
+	TwoPointers_1 "goplay/Advanced/TwoPointers-1"
 )
 
 func Advanced() {
 	{
-		Arrays.Arrays()
+		//Arrays.Arrays()
 	}
 	{
-		GCD.GCD()
+		//GCD.GCD()
+	}
+	{
+		TwoPointers_1.TwoPointers()
 	}
 
 }
