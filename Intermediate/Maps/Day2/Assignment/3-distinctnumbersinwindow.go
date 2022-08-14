@@ -1,35 +1,28 @@
 package Assignment
 
-func DNums(A []int, B int) []int {
-	windowMap := make(map[int]int)
-	result := make([]int, 0)
+func dNums(A []int, B int) []int {
+	dNums := make([]int, 0)
+	numMap := make(map[int]int)
 
 	for i := 0; i < B; i++ {
-		windowMap[A[i]] = windowMap[A[i]] + 1
+		numMap[A[i]] = numMap[A[i]] + 1
 	}
 
-	result = append(result, len(windowMap))
-
+	dNums = append(dNums, len(numMap))
 	for i := 1; i <= len(A)-B; i++ {
 
-		// adding element
-		if _, ok := windowMap[A[B+i-1]]; ok {
-			windowMap[A[B+i-1]] = windowMap[A[B+i-1]] + 1
-		} else {
-			windowMap[A[B+i-1]] = 1
-		}
-
-		//removing element
-		if _, ok := windowMap[A[i-1]]; ok {
-			windowMap[A[i-1]] = windowMap[A[i-1]] - 1
-			if windowMap[A[i-1]] == 0 {
-				delete(windowMap, A[i-1])
+		// remove element
+		if numMap[A[i-1]] > 0 {
+			numMap[A[i-1]] = numMap[A[i-1]] - 1
+			if numMap[A[i-1]] == 0 {
+				delete(numMap, A[i-1])
 			}
 		}
 
-		result = append(result, len(windowMap))
+		// add element
+		numMap[A[B+i-1]] = numMap[A[B+i-1]] + 1
+		dNums = append(dNums, len(numMap))
 
 	}
-
-	return result
+	return dNums
 }
