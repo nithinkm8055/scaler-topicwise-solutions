@@ -1,5 +1,6 @@
 package Assignment
 
+//
 //func main() {
 //	node1 := listNode_new(46)
 //	node2 := listNode_new(76)
@@ -23,7 +24,29 @@ package Assignment
 //	return node
 //}
 
+// slow and fast pointers
 func MiddleElementOfLinkedList(A *listNode) int {
+
+	if A == nil {
+		return 0
+	}
+
+	slow := A
+	fast := A
+
+	for fast.next != nil && fast.next.next != nil {
+		slow = slow.next
+		fast = fast.next.next
+	}
+
+	if fast.next == nil {
+		return slow.value
+	}
+
+	return slow.next.value
+}
+
+func MiddleElementOfLinkedList2(A *listNode) int {
 	if A == nil {
 		return 0
 	}
