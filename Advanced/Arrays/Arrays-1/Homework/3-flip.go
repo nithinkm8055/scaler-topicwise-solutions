@@ -1,20 +1,56 @@
 package Homework
 
-func Flip(A string) []int {
-	// Question stmt
-	// string with chars 0 and 1
-	// In one operation, choose 2 indices L and R, l <= r, and flip characters
-	// return l r pair that can maximise number of 1s in atmost single operation as an array
+func flip(A string) []int {
+	count := 0
+	for i := range A {
+		if A[i] == '1' {
+			count++
+		}
+	}
 
-	// o/p indexing is one based
-	// o/p should be lexicographically dominant
+	if count == len(A) {
+		return []int{}
+	}
 
-	// Solution Approach
-	// longest substring with max 0s > max 1s
-	//start and end index must be a 0
+	l := -1
+	r := -1
+	max := 0
+	count = 0
+	ansLIndex := -1
+	ansRIndex := -1
 
-	// 1 1 0 0 0 1 1 1 0 0 0
+	reset := false
+	for i := range A {
+		if A[i] == '1' {
+			count--
+		} else if A[i] == '0' {
+			count++
+		}
 
-	return []int{}
+		if count >= 0 {
 
+			if l == -1 || reset {
+				l = i
+				r = i
+			} else {
+				r = i
+			}
+
+			reset = false
+		} else if count < 0 {
+			count = 0
+			reset = true
+		}
+
+		if count >= max && !reset {
+			if count > max {
+				ansLIndex = l
+				ansRIndex = r
+			}
+
+			max = count
+		}
+	}
+
+	return []int{ansLIndex + 1, ansRIndex + 1}
 }
