@@ -1,6 +1,52 @@
 package Homework
 
+// n^3 approach
 func MaxSumSubMatrix(A [][]int) int {
+	pfColSum := make([][]int, len(A))
+
+	for i := 0; i < len(A); i++ {
+		pfColSum[i] = make([]int, len(A[i]))
+	}
+
+	for j := 0; j < len(A[0]); j++ {
+
+		for i := 0; i < len(A); i++ {
+			if i == 0 {
+				pfColSum[i][j] = A[i][j]
+			} else {
+				pfColSum[i][j] = pfColSum[i-1][j] + A[i][j]
+			}
+		}
+	}
+
+	ans := -10000000000
+	for tr := 0; tr < len(A); tr++ {
+
+		for br := tr; br < len(A); br++ {
+
+			sum := 0
+			for col := 0; col < len(A[tr]); col++ {
+				if tr == 0 {
+					sum += pfColSum[br][col]
+				} else {
+					sum += pfColSum[br][col] - pfColSum[tr-1][col]
+				}
+				if sum > ans {
+					ans = sum
+				}
+				if sum < 0 {
+					sum = 0
+				}
+			}
+
+		}
+	}
+
+	return ans
+}
+
+// TLE: TC(O(m^2n^2))
+func MaxSumSubMatrix2(A [][]int) int {
 
 	pfSum := make([][]int, len(A))
 
