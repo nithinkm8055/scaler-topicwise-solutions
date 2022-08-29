@@ -4,7 +4,7 @@ type Interval struct {
 	start, end int
 }
 
-func insert(intervals []Interval, newInterval Interval) []Interval {
+func MergeIntervals(intervals []Interval, newInterval Interval) []Interval {
 
 	if newInterval.start > newInterval.end {
 		newInterval.start, newInterval.end = newInterval.end, newInterval.start
@@ -16,9 +16,7 @@ func insert(intervals []Interval, newInterval Interval) []Interval {
 
 		if newInterval.start > intervals[i].end {
 			resultInterval = append(resultInterval, intervals[i])
-		}
-
-		if intervals[i].start > newInterval.end {
+		} else if intervals[i].start > newInterval.end {
 
 			resultInterval = append(resultInterval, newInterval)
 			for i < len(intervals) {
@@ -28,9 +26,7 @@ func insert(intervals []Interval, newInterval Interval) []Interval {
 			flag = true
 
 			break
-		}
-
-		if intervals[i].start < newInterval.end && newInterval.start < intervals[i].end {
+		} else {
 			newInterval.start = min(intervals[i].start, newInterval.start)
 			newInterval.end = max(intervals[i].end, newInterval.end)
 		}

@@ -1,8 +1,8 @@
 package Homework
 
-func MinSwap(A []int, B int) int {
+func MinSwaps(A []int, B int) int {
 
-	windowSize := 0
+	windowSize := 0 // total no. of good elements in array
 
 	for i := range A {
 		if A[i] <= B {
@@ -10,34 +10,33 @@ func MinSwap(A []int, B int) int {
 		}
 	}
 
-	goodValue := 0
-	badValue := 0
+	if windowSize == len(A) {
+		return 0
+	}
 
+	badValue := 0 // we have to minimize the bad value
 	for i := 0; i < windowSize; i++ {
-		if A[i] <= B {
-			goodValue++
-		} else {
+		if A[i] > B {
 			badValue++
 		}
 	}
 
-	ans := badValue
+	minSwaps := badValue // stores the min swaps needed
 
-	j := windowSize
-	for i := 1; i <= len(A)-windowSize; {
+	for i := 1; i <= len(A)-windowSize; i++ {
 
 		if A[i-1] > B {
 			badValue--
 		}
-
-		if A[j] > B {
+		if A[windowSize+i-1] > B {
 			badValue++
 		}
 
-		i++
-		j++
-		ans = min(ans, badValue)
+		if badValue < minSwaps {
+			minSwaps = badValue
+		}
+
 	}
 
-	return ans
+	return minSwaps
 }

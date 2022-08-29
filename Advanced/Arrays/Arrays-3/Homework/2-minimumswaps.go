@@ -6,6 +6,24 @@ import (
 
 func MinSwaps2(A []int) int {
 
+	swaps := 0
+	i := 0
+
+	for i < len(A) {
+		if A[i] != i {
+			A[i], A[A[i]] = A[A[i]], A[i]
+			swaps++
+		} else {
+			i++
+		}
+
+	}
+
+	return swaps
+}
+
+func MinSwaps2Old(A []int) int {
+
 	positionMap := make(map[int]int)
 
 	// store value and index as key value pair
@@ -36,5 +54,4 @@ func MinSwaps2(A []int) int {
 	}
 
 	return swapCount
-
 }
