@@ -1,0 +1,113 @@
+type listNode struct {
+	value int
+	next  *listNode
+}
+
+func listNode_new(val int) *listNode {
+	var node *listNode = new(listNode)
+	node.value = val
+	node.next = nil
+	return node
+}
+
+func main() {
+	node1 := listNode_new(1)
+	node2 := listNode_new(2)
+	node3 := listNode_new(3)
+	node4 := listNode_new(4)
+	node5 := listNode_new(5)
+
+	node1.next = node2
+	node2.next = node3
+	node3.next = node4
+	node4.next = node5
+
+	temp := node1
+	for temp != nil {
+		fmt.Println(temp.value)
+		temp = temp.next
+	}
+
+	fmt.Println("####################################")
+	fmt.Println(solve(node1))
+}
+
+func solve(A *listNode) int {
+
+	clone := clonelist(A)
+
+	h2 := reverse(clone)
+
+	temp := h2
+
+	for temp != nil {
+		fmt.Println(temp.value)
+		temp = temp.next
+	}
+
+	fmt.Println("####################################")
+	temp2 := A
+
+	for temp2 != nil {
+		fmt.Println(temp2.value)
+		temp2 = temp2.next
+	}
+
+	fmt.Println("####################################")
+
+	counter := 0
+	ans := 0
+
+	for A != nil {
+		if A.value == h2.value {
+			counter++
+		} else {
+			ans = max(ans, counter)
+			counter = 0
+		}
+		A = A.next
+		h2 = h2.next
+	}
+
+	return ans
+
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
+func clonelist(A *listNode) *listNode {
+	temp := A
+
+	h1 := listNode_new(-1)
+	tail := h1
+
+	for temp != nil {
+		newNode := listNode_new(temp.value)
+		tail.next = newNode
+		temp = temp.next
+		tail = tail.next
+	}
+	return h1.next
+}
+
+func reverse(A *listNode) *listNode {
+
+	var prev *listNode
+	var temp *listNode
+
+	curr := A
+
+	for curr != nil {
+		temp = curr.next
+		curr.next = prev
+		prev = curr
+		curr = temp
+	}
+
+	return prev
+}

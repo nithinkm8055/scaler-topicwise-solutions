@@ -1,6 +1,32 @@
 package Assignment
 
 func countTotalSetBits(A int) int {
+
+	if A <= 1 {
+		return A
+	}
+	x := setBitsPowerInTwoPower(A)
+	btill2x := x * (1 << (x - 1))
+	msbSet := A - (1 << x) + 1
+	rest := A - (1 << x)
+
+	ans := btill2x + msbSet + countTotalSetBits(rest)
+	return ans % (1000000007)
+
+}
+
+func setBitsPowerInTwoPower(A int) int {
+	x := 0
+
+	for (1 << x) <= A {
+		x++
+	}
+
+	return x - 1
+
+}
+
+func countTotalSetBits2(A int) int {
 	cnt := 0
 
 	//TLE
