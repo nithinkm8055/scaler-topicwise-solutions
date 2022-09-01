@@ -1,10 +1,10 @@
 package Assignment
 
 func solve(A int) int {
-	A = ismagic(A)
-	if A >= 10 {
-		return solve(A)
-	} else if A <= 10 && (A == 1) {
+	for A > 9 {
+		A = ismagic(A)
+	}
+	if A == 1 {
 		return 1
 	}
 	return 0

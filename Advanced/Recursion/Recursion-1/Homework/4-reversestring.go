@@ -11,11 +11,22 @@ func reversestr() {
 	var input string
 	fmt.Scanf("%s", &input)
 
-	fmt.Println(string(reverse([]byte(input), 0, len(input)-1)))
-
+	// old
+	//fmt.Println(string(reverse([]byte(input), 0, len(input)-1)))
+	reverse(input)
 }
 
-func reverse(str []byte, i, j int) []byte {
+func reverse(s string) {
+
+	if s == "" {
+		return
+	}
+
+	fmt.Print(string(s[len(s)-1]))
+	reverse(s[:len(s)-1])
+}
+
+func reverseOld(str []byte, i, j int) []byte {
 
 	if i > j {
 		return str
@@ -23,6 +34,6 @@ func reverse(str []byte, i, j int) []byte {
 
 	str[i], str[j] = str[j], str[i]
 
-	return reverse(str, i+1, j-1)
+	return reverseOld(str, i+1, j-1)
 
 }
