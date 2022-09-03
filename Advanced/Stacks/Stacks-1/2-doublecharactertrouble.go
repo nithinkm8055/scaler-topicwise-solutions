@@ -25,7 +25,7 @@ func DoubleCharacterTrouble(A string) string {
 	temp := head
 
 	for temp != nil {
-		result = append(result, temp.value)
+		result = append(result, (temp.value).(byte))
 		temp = temp.next
 	}
 

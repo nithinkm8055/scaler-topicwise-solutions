@@ -1,11 +1,15 @@
 package Stacks_1
 
 type Node struct {
-	value byte
+	value any
 	next  *Node
 }
 
-func newNode(val byte) *Node {
+type Values interface {
+	byte | string
+}
+
+func newNode[value Values](val value) *Node {
 	newNode := new(Node)
 	newNode.value = val
 	newNode.next = nil
