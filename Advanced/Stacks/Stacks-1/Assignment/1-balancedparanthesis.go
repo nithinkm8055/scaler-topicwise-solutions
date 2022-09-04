@@ -1,4 +1,4 @@
-package Stacks_1
+package Assignment
 
 type Node struct {
 	value any

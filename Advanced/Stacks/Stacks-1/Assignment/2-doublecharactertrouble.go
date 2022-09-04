@@ -1,4 +1,4 @@
-package Stacks_1
+package Assignment
 
 func DoubleCharacterTrouble(A string) string {
 
