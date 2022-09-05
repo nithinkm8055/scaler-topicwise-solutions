@@ -20,15 +20,6 @@ func largestRectangleArea(A []int) int {
 	rsIndex := findRightSmallerIndex(A)
 
 	for i := range A {
-
-		if lsIndex[i] == -1 {
-			lsIndex[i] = -1
-		}
-
-		if rsIndex[i] == -1 {
-			rsIndex[i] = len(A)
-		}
-
 		area := (rsIndex[i] - lsIndex[i] - 1) * A[i]
 
 		if area > max {
@@ -37,7 +28,6 @@ func largestRectangleArea(A []int) int {
 	}
 
 	return max
-
 }
 
 func findLeftSmallerIndex(A []int) []int {
@@ -73,7 +63,7 @@ func findRightSmallerIndex(A []int) []int {
 	for j := len(A) - 1; j >= 0; j-- {
 		if rHead == nil {
 			rHead = insert(rHead, j)
-			rsIndex[j] = -1
+			rsIndex[j] = len(A)
 		} else if A[rHead.val] >= A[j] {
 			for rHead != nil {
 				if A[rHead.val] < A[j] {
@@ -83,7 +73,7 @@ func findRightSmallerIndex(A []int) []int {
 				rHead = rHead.next
 			}
 			if rHead == nil {
-				rsIndex[j] = -1
+				rsIndex[j] = len(A)
 			}
 			rHead = insert(rHead, j)
 		} else if A[rHead.val] < A[j] {
