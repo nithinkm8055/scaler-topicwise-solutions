@@ -1,4 +1,4 @@
-package Homework
+package Assignment
 
 import "strconv"
 

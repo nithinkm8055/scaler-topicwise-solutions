@@ -1,4 +1,4 @@
-package Homework
+package Assignment
 
 func TaskScheduling(A []int, B []int) int {
 
