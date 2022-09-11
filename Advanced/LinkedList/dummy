@@ -87,8 +87,8 @@ func clonelist(A *listNode) *listNode {
 	tail := h1
 
 	for temp != nil {
-		newNode := listNode_new(temp.value)
-		tail.next = newNode
+		newQueueNode := listNode_new(temp.value)
+		tail.next = newQueueNode
 		temp = temp.next
 		tail = tail.next
 	}
