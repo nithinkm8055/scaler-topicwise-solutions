@@ -12,6 +12,7 @@ func sortedArrayToBST(nums []int) *treeNode {
 	return build(nums, 0, len(nums)-1)
 }
 
+// for a BST, a sorted representation of tree is more of an inorder traversal
 func build(nums []int, l, r int) *treeNode {
 	if l > r {
 		return nil
