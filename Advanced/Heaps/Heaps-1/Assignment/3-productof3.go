@@ -11,13 +11,13 @@ func solve(A []int) []int {
 		return result
 	}
 
-	heapify(A[0:3], 0)
+	heapify1(A[0:3], 0)
 	result = append(result, A[0]*A[1]*A[2])
 	for i := 3; i < len(A); i++ {
 
 		if A[i] > A[0] {
 			A[0], A[i] = A[i], A[0]
-			heapify(A[0:3], 0)
+			heapify1(A[0:3], 0)
 
 		}
 
@@ -28,7 +28,7 @@ func solve(A []int) []int {
 
 }
 
-func heapify(heap []int, i int) {
+func heapify1(heap []int, i int) {
 
 	for (2*i)+1 < len(heap) {
 		x := min(heap[i], heap[2*i+1], -1)

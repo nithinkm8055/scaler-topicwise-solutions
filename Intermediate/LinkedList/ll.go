@@ -2,7 +2,8 @@ package LinkedList
 
 import (
 	"fmt"
-	Assignment2 "goplay/Intermediate/LinkedList/Assignment"
+
+	Assignment2 "github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/LinkedList/Assignment"
 )
 
 func LinkedList() {

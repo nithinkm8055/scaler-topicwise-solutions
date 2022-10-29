@@ -2,10 +2,11 @@ package Arrays
 
 import (
 	"fmt"
-	"goplay/Advanced/Arrays/Arrays-1/Homework"
-	"goplay/Advanced/Arrays/Arrays-2/Assignment"
-	Assignment2 "goplay/Advanced/Arrays/Arrays-3/Assignment"
-	Homework2 "goplay/Advanced/Arrays/Arrays-3/Homework"
+
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Advanced/Arrays/Arrays-1/Homework"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Advanced/Arrays/Arrays-2/Assignment"
+	Assignment2 "github.com/nithinkm8055/scaler-topicwise-solutions/Advanced/Arrays/Arrays-3/Assignment"
+	Homework2 "github.com/nithinkm8055/scaler-topicwise-solutions/Advanced/Arrays/Arrays-3/Homework"
 )
 
 func Arrays() {

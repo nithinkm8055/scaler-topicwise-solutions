@@ -1,19 +1,19 @@
 package Intermediate
 
 import (
-	"goplay/Intermediate/Adhoc"
-	"goplay/Intermediate/Arrays"
-	"goplay/Intermediate/LinkedList"
-	"goplay/Intermediate/Maps"
-	"goplay/Intermediate/Maps/Day1"
-	"goplay/Intermediate/Maths"
-	"goplay/Intermediate/Modular"
-	"goplay/Intermediate/Sort"
-	"goplay/Intermediate/Sorting"
-	"goplay/Intermediate/StacksnQueues"
-	"goplay/Intermediate/Strings"
-	"goplay/Intermediate/SubsequencesAndSubsets"
-	"goplay/Intermediate/Trees"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Adhoc"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Arrays"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/LinkedList"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Maps"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Maps/Day1"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Maths"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Modular"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Sort"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Sorting"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/StacksnQueues"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Strings"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/SubsequencesAndSubsets"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Trees"
 )
 
 func Intermediate() {

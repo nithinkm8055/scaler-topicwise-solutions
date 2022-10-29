@@ -2,12 +2,13 @@ package Arrays
 
 import (
 	"fmt"
-	Assignment7 "goplay/Intermediate/Arrays/CarryForward/Assignment"
-	Assignment5 "goplay/Intermediate/Arrays/Intro/Assignment"
-	"goplay/Intermediate/Arrays/Intro/Homework"
-	Assignment3 "goplay/Intermediate/Arrays/PrefixSum/Assignment"
-	Assignment6 "goplay/Intermediate/Arrays/SubArrays/Assignment"
-	Homework2 "goplay/Intermediate/Arrays/SubArrays/Homework"
+
+	Assignment7 "github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Arrays/CarryForward/Assignment"
+	Assignment5 "github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Arrays/Intro/Assignment"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Arrays/Intro/Homework"
+	Assignment3 "github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Arrays/PrefixSum/Assignment"
+	Assignment6 "github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Arrays/SubArrays/Assignment"
+	Homework2 "github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Arrays/SubArrays/Homework"
 )
 
 func Arrays() {

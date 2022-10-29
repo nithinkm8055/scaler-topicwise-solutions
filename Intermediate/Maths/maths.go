@@ -2,7 +2,8 @@ package Maths
 
 import (
 	"fmt"
-	"goplay/Intermediate/Maths/Homework"
+
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Maths/Homework"
 )
 
 func Maths() {

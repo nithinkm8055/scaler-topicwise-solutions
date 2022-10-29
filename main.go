@@ -1,8 +1,6 @@
 package main
 
-import (
-	"goplay/Advanced"
-)
+import "github.com/nithinkm8055/scaler-topicwise-solutions/Advanced"
 
 func main() {
 	{

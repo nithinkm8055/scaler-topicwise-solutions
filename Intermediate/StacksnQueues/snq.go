@@ -2,8 +2,9 @@ package StacksnQueues
 
 import (
 	"fmt"
-	"goplay/Intermediate/StacksnQueues/Assignment"
-	"goplay/Intermediate/StacksnQueues/Homework"
+
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/StacksnQueues/Assignment"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/StacksnQueues/Homework"
 )
 
 func StacksAndQueues() {

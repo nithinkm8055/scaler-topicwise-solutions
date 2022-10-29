@@ -2,7 +2,8 @@ package Contest
 
 import (
 	"fmt"
-	"goplay/Intermediate/Contest/Contest1"
+
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Contest/Contest1"
 )
 
 func Contest() {

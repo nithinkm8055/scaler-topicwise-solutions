@@ -2,8 +2,9 @@ package Sorting
 
 import (
 	"fmt"
-	"goplay/Intermediate/Sorting/Assignment"
-	"goplay/Intermediate/Sorting/Homework"
+
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Sorting/Assignment"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Sorting/Homework"
 )
 
 func Sorting() {

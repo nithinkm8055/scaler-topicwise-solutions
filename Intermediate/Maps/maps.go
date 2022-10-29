@@ -2,8 +2,9 @@ package Maps
 
 import (
 	"fmt"
-	Assignment2 "goplay/Intermediate/Maps/Day2/Assignment"
-	"goplay/Intermediate/Maps/Day2/Homework"
+
+	Assignment2 "github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Maps/Day2/Assignment"
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Maps/Day2/Homework"
 )
 
 func Maps() {

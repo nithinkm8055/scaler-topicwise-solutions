@@ -2,7 +2,8 @@ package SubsequencesAndSubsets
 
 import (
 	"fmt"
-	"goplay/Intermediate/SubsequencesAndSubsets/Assignment"
+
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/SubsequencesAndSubsets/Assignment"
 )
 
 func SubsequencesAndSubsets() {

@@ -2,7 +2,8 @@ package GCD
 
 import (
 	"fmt"
-	"goplay/Advanced/GCD/Homework"
+
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Advanced/GCD/Homework"
 )
 
 func GCD() {

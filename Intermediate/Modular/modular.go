@@ -2,8 +2,9 @@ package Modular
 
 import (
 	"fmt"
-	Assignment2 "goplay/Intermediate/Modular/Assignment"
-	Homework2 "goplay/Intermediate/Modular/Homework"
+
+	Assignment2 "github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Modular/Assignment"
+	Homework2 "github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Modular/Homework"
 )
 
 func Modular() {

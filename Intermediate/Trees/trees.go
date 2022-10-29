@@ -2,7 +2,8 @@ package Trees
 
 import (
 	"fmt"
-	"goplay/Intermediate/Trees/Trees1/Assignment"
+
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Trees/Trees1/Assignment"
 )
 
 func Trees() {

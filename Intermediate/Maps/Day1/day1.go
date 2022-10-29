@@ -2,8 +2,9 @@ package Day1
 
 import (
 	"fmt"
-	"goplay/Intermediate/Maps/Day1/Assignment"
-	Homework2 "goplay/Intermediate/Maps/Day1/Homework"
+
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Maps/Day1/Assignment"
+	Homework2 "github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Maps/Day1/Homework"
 )
 
 func Maps() {

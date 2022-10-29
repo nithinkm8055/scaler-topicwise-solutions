@@ -1,7 +1,7 @@
 package Advanced
 
 import (
-	TwoPointers_1 "goplay/Advanced/TwoPointers-1"
+	TwoPointers_1 "github.com/nithinkm8055/scaler-topicwise-solutions/Advanced/TwoPointers-1"
 )
 
 func Advanced() {

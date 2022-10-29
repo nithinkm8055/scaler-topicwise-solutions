@@ -2,8 +2,9 @@ package Strings
 
 import (
 	"fmt"
-	Assignment2 "goplay/Intermediate/Strings/Assignment"
-	Homework2 "goplay/Intermediate/Strings/Homework"
+
+	Assignment2 "github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Strings/Assignment"
+	Homework2 "github.com/nithinkm8055/scaler-topicwise-solutions/Intermediate/Strings/Homework"
 )
 
 func Strings() {

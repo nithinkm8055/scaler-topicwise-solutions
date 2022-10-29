@@ -2,7 +2,8 @@ package TwoPointers_1
 
 import (
 	"fmt"
-	"goplay/Advanced/TwoPointers-1/Homework"
+
+	"github.com/nithinkm8055/scaler-topicwise-solutions/Advanced/TwoPointers-1/Homework"
 )
 
 func TwoPointers() {
