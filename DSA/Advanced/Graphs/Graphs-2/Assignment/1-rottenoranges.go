@@ -1,5 +1,24 @@
 package Assignment
 
+//Given a matrix of integers A of size N x M consisting of 0, 1 or 2.
+//
+//Each cell can have three values:
+//
+//The value 0 representing an empty cell.
+//
+//The value 1 representing a fresh orange.
+//
+//The value 2 representing a rotten orange.
+//
+//Every minute, any fresh orange that is adjacent (Left, Right, Top, or Bottom) to a rotten orange becomes rotten. Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this is impossible, return -1 instead.
+//
+//Note: Your solution will run on multiple test cases. If you are using global variables, make sure to clear them.
+
+//Output Format
+//Return the minimum number of minutes that must elapse until no cell has a fresh orange.
+//
+//If this is impossible, return -1 instead.
+
 type Pair struct {
 	x    int
 	y    int
