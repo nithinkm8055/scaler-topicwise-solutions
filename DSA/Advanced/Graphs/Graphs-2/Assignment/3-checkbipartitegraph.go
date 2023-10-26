@@ -2,7 +2,7 @@ package Assignment
 
 // check if graph is bipartite
 // given an undirected graph
-
+// A bipartite graph has chromatic number of 2
 func _bipartite(A int, B [][]int) int {
 
 	// create adjacency list
