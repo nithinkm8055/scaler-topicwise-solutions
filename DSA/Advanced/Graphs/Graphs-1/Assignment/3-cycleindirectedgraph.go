@@ -17,12 +17,14 @@ package Assignment
 
 func _solve(A int, B [][]int) int {
 	graph := __adjList(A, B)
-
+	visited := make([]int, A+1)
 	for i := 1; i < A; i++ {
-		visited := make([]int, A+1)
-		if !__dfs(i, visited, graph) {
-			return 1
+		if visited[i] == 0 {
+			if !__dfs(i, visited, graph) {
+				return 1
+			}
 		}
+
 	}
 
 	return 0
