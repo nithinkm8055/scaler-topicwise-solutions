@@ -70,6 +70,7 @@ func solve(A [][]int) int {
 	// perform bfs with rotten oranges as starters in queue
 	// traverse through matrix again to see if all oranges are picked
 
+	// push all rotten oranges inside queue
 	for i := 0; i < len(A); i++ {
 		for j := 0; j < len(A[i]); j++ {
 
