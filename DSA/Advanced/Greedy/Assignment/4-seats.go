@@ -9,7 +9,6 @@ package Assignment
 //
 //In one jump a person can move to the adjacent seat (if available).
 
-// Solution gets TLE
 func seats(A string) int {
 
 	seats := make(map[int]int) // stores the number of occupied seat + index
@@ -26,31 +25,47 @@ func seats(A string) int {
 
 	midIndex := seats[count/2]
 	hopCounter := 0
+	leftClosest := -1
+	rightClosest := -1
 
 	for i := range A {
 
 		if allocator[i] == 1 && i != midIndex {
-			allocator[i] = 0
 			if midIndex-i > 1 {
-				for j := midIndex - 1; j >= i; j-- {
+				allocator[i] = 0
+				j := midIndex - 1
+
+				if leftClosest != -1 {
+					j = leftClosest
+				}
+
+				for ; j >= i; j-- {
 					if allocator[j] == 0 {
 						allocator[j] = 1
+						leftClosest = j - 1
 						hopCounter += (j - i)
 						break
 					}
 				}
 			} else if i-midIndex > 1 {
-				for j := midIndex + 1; j <= i; j++ {
+				allocator[i] = 0
+
+				j := midIndex + 1
+
+				if rightClosest != -1 {
+					j = rightClosest
+				}
+
+				for ; j <= i; j++ {
 					if allocator[j] == 0 {
 						allocator[j] = 1
+						rightClosest = j + 1
 						hopCounter += (i - j)
 						break
 					}
 				}
 			}
 		}
-
 	}
-
-	return hopCounter
+	return hopCounter % 10000003
 }
